@@ -30,9 +30,31 @@ twitter_username: andrew_gclark
 github_username:  AndrewC19
 
 # Build settings
-theme: jekyll-swiss
+theme: plainwhite
 plugins:
   - jekyll-feed
+
+plainwhite:
+  navigation:
+    - title: About
+      url: "/#posts-label-about"
+    - title: News
+      url: "/#posts-label"
+  dark_mode: true
+  tagline: |
+    Software Engineering PhD Student
+    University of Sheffield, UK
+  name: Andrew Clark
+  date_format: "%b %-d, %Y"
+  sitemap: true
+
+  social_links:
+    twitter: andrew_gclark
+    github: andrewc19
+    linkedIn: in/andrewc19/ # format: locale/username
+
+style: light
+listen_for_clients_preferred_style: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

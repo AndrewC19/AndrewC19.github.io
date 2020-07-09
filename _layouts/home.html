@@ -1,69 +1,57 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
+<div class="post-container">
+  <li class="posts-labelgroup" id="posts-labelgroup">
+    <h1 id="posts-label-about">About me</h1>
+  </li>
+  {{ content }}
 
-  {% include head.html %}
-
-  <body>
-
-    <div>
-
-      <header class="header-background">
-
-        <div class="clearfix border-bottom-thick header-border">
-          <ul class="list-reset right py-1 header-text font-smoothing">
-            {% for my_page in site.pages %}
-              {% if my_page.title %}
-              <li class="inline-block">
-                <a class="align-middle link-primary header-link mr-2" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-              </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-
-        <div class="container mx-auto px-2 mb-2 clearfix header-text">
-          <h1 class="h0 inline-block col-9 sm-width-full py-4 mt-3 header-title">{{ site.title }}</h1>
-
-          <div class="clearfix mb-4 py-1">
-            <div class="col-4 sm-width-full left border-top-thin">
-              <div class="table">
-                <div class="inline-block mt-3 mr-1">
-                  {% include dot-accent.html %}
-                </div>
-                <div class="inline-block mt-3 mr-1">
-                  {% include dot-accent.html %}
-                </div>
-                <div class="inline-block mt-3">
-                  {% include github.html %}
-                </div>
-              </div>
-              <!-- Set site description in config.yml -->
-              <p class="h4 lh-condensed font-smoothing mt-2 py-1">{{ site.description }}</p>
-            </div>
-
-            <div class="col-4 sm-width-full left border-top-thin mt-3 mt-lg-0 ml-lg-4 table">
-                <div class="inline-block mt-3 mr-1">
-                  {% include dot.html %}
-                </div>
-                <div class="inline-block mt-3">
-                  {% include {{ site.social_link | default: "twitter" }}.html %}
-                </div>
-            </div>
+  {%- if site.posts.size > 0 -%}
+    <ul class="posts">
+      <li class="posts-labelgroup" id="posts-labelgroup">
+        <h1 id="posts-label">News</h1>
+        {% if site.plainwhite.search %}
+        <div class="search-container">
+          <div class="search-section">
+            <i class="icon-search"></i>
+            <input type="text" name="search" id="searchbar" autocomplete="off" aria-label="search in posts">
           </div>
-
+          <div class="search-results" id="search-results" data-placeholder="No Results" style="display: none;"></div>
         </div>
-      </header>
+        {% endif %}
+      </li>
 
-      <div class="container mx-auto px-2 py-4">
-        {% for post in site.posts %}
-          {% include post_block.html %}
-        {% endfor %}
-      </div>
+      {%- for post in site.posts -%}
+        <li>
+          {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            <h2 class="post-title">{{ post.title | escape }}</h2>
+          </a>
+          <div class="post-meta">
+            <div class="post-date">
+              <i class="icon-calendar"></i>
+              {{ post.date | date: date_format }}
+            </div>
+            {%- if post.categories.size > 0-%}
+            <ul class="post-categories">
+              {%- for tag in post.categories -%}
+              <li>{{ tag }}</li>
+              {%- endfor -%}
+            </ul>
+            {%- endif -%}
+          </div>
+          <div class="post">
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </div>
+        </li>
+      {%- endfor -%}
+    </ul>
 
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
-</html>
+    <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
+      <use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+    </svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p> -->
+  {%- endif -%}
+<div class="post-container"></div>
