@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Andrew Clark"
 date:   2020-07-09 10:45:47 +0100
 categories: jekyll update
 ---
