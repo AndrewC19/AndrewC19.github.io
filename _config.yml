@@ -35,18 +35,18 @@ plugins:
   - jekyll-feed
 
 plainwhite:
-  navigation:
-    - title: About
-      url: "/#posts-label-about"
-    - title: News
-      url: "/#posts-label"
+  # navigation:
+  #   - title: About
+  #     url: "/#posts-label-about"
+  #   - title: News
+  #     url: "/#posts-label"
   dark_mode: true
   tagline: |
     Software Engineering PhD Student
     University of Sheffield, UK
   name: Andrew Clark
   date_format: "%b %-d, %Y"
-  sitemap: true
+  sitemap: false
 
   social_links:
     twitter: andrew_gclark
