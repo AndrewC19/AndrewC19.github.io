@@ -4,7 +4,7 @@
 
 layout: home
 ---
-I am a first year PhD student at the University of Sheffield in the Department of Computer Science supervised by Dr. Neil Walkinshaw. You can find out more about my previous education and employment on my LinkedIn profile.
+I am a PhD candidate in the Department of Computer Science at the University of Sheffield supervised by Dr. Neil Walkinshaw. You can find out more about my previous education and employment on my LinkedIn profile.
 
 #### Research
 My main research interests include software testing, computational models and causal inference. My research focusses on how causal inference techniques may be applied to support various testing activities, especially when applied to real world computational models.
