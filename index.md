@@ -4,12 +4,12 @@
 
 layout: home
 ---
-I am a PhD candidate in the Department of Computer Science at the University of Sheffield supervised by Dr. Neil Walkinshaw. You can find out more about my previous education and employment on my LinkedIn profile.
+I am a PhD candidate from the Department of Computer Science at the University of Sheffield, supervised by Dr Neil Walkinshaw. You can find out more about my previous education and employment on my LinkedIn profile.
 
 #### Research
-My main research interests include software testing, computational models and causal inference. My research focusses on how causal inference techniques may be applied to support various testing activities, especially when applied to real world computational models.
+My main research interests include software testing, computational models (particularly agent-based), and causal inference. My current research focusses on leveraging causal inference techniques to support various testing activities in the context of computational modelling.
 
-Aside from my main research, I am also interested in data visualisation and enjoy finding creative ways to communicate complex data and statistics.
+Aside from my core research, I am also interested in data visualisation and enjoy finding creative ways to communicate complex data and statistics.
 
 #### Technology
 I mainly develop in Python and Java, but have experience with a range of programming languages and technologies including, but not limited to:
