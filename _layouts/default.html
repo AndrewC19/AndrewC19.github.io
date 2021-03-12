@@ -6,6 +6,17 @@
 </head>
 
 <body>
+  {%- if site.plainwhite.navigation -%}
+      <nav class="navigation">
+        <ul>
+          {% for link in site.plainwhite.navigation %}
+          <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </nav>
+      {%- endif -%}
   <main class="container">
     <section class="about">
       <a href="{{ "/" | relative_url}}"><img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}"></a>
@@ -94,17 +105,6 @@
       </ul>
       {%- if site.email -%}
         <p> {{site.email}} </p>
-      {%- endif -%}
-      {%- if site.plainwhite.navigation -%}
-      <nav class="navigation">
-        <ul>
-          {% for link in site.plainwhite.navigation %}
-          <li>
-            <a href="{{ link.url }}">{{ link.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
       {%- endif -%}
       {%- if site.plainwhite.dark_mode -%}
       <div>
