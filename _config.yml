@@ -36,10 +36,10 @@ plugins:
 
 plainwhite:
   navigation:
-    - title: About
-      url: "/"
-    - title: Publications
-      url: "/publications"
+   - title: About me
+     url: "/"
+   - title: Publications
+     url: "/publications"
   dark_mode: true
   tagline: |
     Software Engineering PhD Candidate
