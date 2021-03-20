@@ -35,11 +35,11 @@ plugins:
   - jekyll-feed
 
 plainwhite:
-  # navigation:
-  #   - title: About
-  #     url: "/#posts-label-about"
-  #   - title: News
-  #     url: "/#posts-label"
+  navigation:
+   - title: About me
+     url: "/"
+   - title: Publications
+     url: "/publications"
   dark_mode: true
   tagline: |
     Software Engineering PhD Candidate
