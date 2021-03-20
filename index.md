@@ -4,7 +4,7 @@
 
 layout: home
 ---
-## About me
+# About Me
 I am a PhD candidate from the Department of Computer Science at the University of Sheffield, supervised by Dr Neil Walkinshaw. You can find out more about my previous education and employment on my LinkedIn profile.
 
 #### Research
