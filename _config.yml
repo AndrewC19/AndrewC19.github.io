@@ -31,7 +31,6 @@ github_username:  AndrewC19
 
 # Build settings
 remote_theme: samarsault/plainwhite-jekyll
-theme: plainwhite
 plugins:
   - jekyll-feed
 
