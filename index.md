@@ -13,12 +13,12 @@ My main research interests include software testing, computational models (parti
 Aside from my core research, I am also interested in data visualisation and enjoy finding creative ways to communicate complex data and statistics.
 
 #### Teaching
-I been a graduate teaching assistant (GTA) on the following Computer Science courses:
-- [COM2107 Logic in Computer Science](http://www.dcs.shef.ac.uk/intranet/teaching/public/modules/level2/com2107.html). For this module, I ran seminar sessions with groups of up to 70 students, covering topics such as propositional and predicate logic, natural deduction, and modal and temporal logic for verification.
+I have been a graduate teaching assistant (GTA) on the following Computer Science courses:
+- [COM2107 Logic in Computer Science](http://www.dcs.shef.ac.uk/intranet/teaching/public/modules/level2/com2107.html) - I ran seminar sessions with groups of up to 70 students, covering topics such as propositional and predicate logic, natural deduction, and modal and temporal logic for verification.
 
-- [COM3523 Software Re-engineering](http://www.dcs.shef.ac.uk/intranet/teaching/public/modules/level3/com3523.html). For this module, I helped students to reverse-engineer and appraise large, complex systems in Java using a variety of source code and execution analysis techniques (static and dynamic).
+- [COM3523 Software Re-engineering](http://www.dcs.shef.ac.uk/intranet/teaching/public/modules/level3/com3523.html) - I helped students to reverse-engineer and appraise large, complex systems in Java using a variety of source code and execution analysis techniques (static and dynamic).
 
-- [COM4506 Testing and Verification in Safety-Critical Systems](http://www.dcs.shef.ac.uk/intranet/teaching/public/modules/level4/com4506.html). For this module, I helped students to analyse software safety in safety-critical systems and implement a range of advanced software testing techniques, such as metamorphic testing.
+- [COM4506 Testing and Verification in Safety-Critical Systems](http://www.dcs.shef.ac.uk/intranet/teaching/public/modules/level4/com4506.html) - I helped students to analyse software safety in safety-critical systems and implement a range of advanced software testing techniques, such as metamorphic testing.
 
  
 
